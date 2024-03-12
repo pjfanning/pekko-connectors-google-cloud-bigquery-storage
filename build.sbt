@@ -16,6 +16,7 @@ val PekkoHttpVersion = "1.0.1"
 lazy val root = (project in file("."))
   .settings(
     name := "pekko-connectors-google-cloud-bigquery-storage",
+    licenses := List(License.Apache2),
     libraryDependencies ++= Seq(
       "com.google.api.grpc" % "proto-google-cloud-bigquerystorage-v1" % "2.47.0" % "protobuf-src",
       "org.apache.avro" % "avro" % AvroVersion % "provided",
